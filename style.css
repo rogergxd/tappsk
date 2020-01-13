@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2.5rem 0;
+    height: auto;
+}
+nav .pc{
+    display: none;
+}
+header{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+header h1{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 0.9rem;
+}
+header p{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+    color:grey;
+    line-height: 1.5rem;
+}
+header #app{
+    width: 10rem;
+    max-width: 10rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+header #play-blue span{
+    font-weight: bold;
+    color: #54BFF9;
+    margin: 0;
+    padding-left: 0.7rem;
+    cursor: pointer;
+}
+header #phone{
+    display: none;
+}
+header #leaf{
+    display: none;
+}
+main #fondo{
+    width: 100%;
+    height: 20rem;
+    background-color:white;
+    background-image: url(archivos/mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+#plus{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-size: 24px;
+    font-weight: bolder;
+}
+#benefits{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.tasks{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.tasks h2{
+    padding-left: 1rem;
+    font-size: 20px;
+}
+.tasks p{
+    padding: 1rem 2rem 2rem 2rem;
+}
+.organize{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 1rem;
+}
+.organize #tema{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.organize #tema h1{
+    width: 60%;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+.organize p{
+    width: 80%;
+    height: auto;
+    line-height: 2rem;
+    padding-top: 2rem;
+}
+.organize .img-task{
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+}
+.organize .img-task img{
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+#foot{
+    width: 90%;
+    height: 13rem;
+    max-height: 15rem;
+    margin: auto;
+    padding: 2rem;
+    background-color: #37ACF4;
+    border-radius: 1rem;
+}
+#foot p{
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+#foot img{
+    width: 10rem;
+    max-width: 10rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+}
+footer{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    margin: auto;
+    margin-top: 3rem;
+}
+footer #footlogo{
+    display: none;
+}
+footer p{
+    opacity: 0.5;
+    line-height: 2rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+footer p:first-child{
+    opacity: 1;
+}
+footer p:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+/*Media Queries*/
+@media (min-width: 600px){
+    header{
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+    #benefits{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .tasks{
+        width: 33.33%;
+    }
+}
+@media (min-width: 1200px){
+    nav .pc{
+        display: block;
+        padding-right: 2rem;
+ 
+    }
+    nav{
+       width: 90%;
+       justify-content: flex-end;
+       margin-top: 3rem;
+       margin-bottom: 4rem;
+       font-size: 1.1rem;  
+    }
+    nav a{
+        padding-left: 3rem;
+        line-height: 42px;
+        text-decoration: none;
+        color: #868A9A;
+    }
+    nav #download{
+        margin-right: 0;
+        padding: 0 25px;
+        color: #32A8F3;
+        background: rgba(50,168,243,.1);
+        border-radius: 20px;
+    }
+    nav img{
+        margin-right: 36.5rem;
+    }
+    main #fondo{
+        display: none;
+    }
+    header{
+        width: 92%;
+        height: 35rem;
+        margin-bottom: 5.5rem;
+        background-color: #37ACF4;
+        border-radius: 20px;
+        color: white;
+        position: relative;
+        overflow-y: hidden;
+    }
+    header #phone{
+        display: block;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        top: 3rem;
+        left: 47rem;
+    }
+    header #phone img{
+        width: 100%;
+    }
+    header #leaf{
+        display: flex;
+        width: 10%;
+        position: absolute;
+        top: 22rem;
+        left: 26rem;
+    }
+    header #leaf img{
+        width: 100%;
+        display: flex;
+        opacity: 0.25;
+        filter: hue-rotate(100deg) brightness(15%);
+    }
+    header #lot{
+        width: 40%;
+        height: auto;
+        margin: 7rem 0 0 3rem;
+        text-align: left;
+    }
+    header #lot h1{
+        width: 100%;
+        font-size: 59px;
+        padding-bottom:1rem ;
+    }
+    header #lot p{
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        color: white;
+    }
+    header #lot #play-blue{
+        position: absolute;
+        bottom: 7.7rem;
+        left: 14rem;
+        padding: 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: #37ACF4;
+
+    }
+    header #lot #play-blue span{
+        color: white;
+  
+    }main #plus{
+        font-size: 38px;
+        margin-bottom: 5.5rem;
+    }
+    #benefits{
+        width: 80%;
+        margin: auto;
+        line-height: 2rem;
+        margin-bottom: 12rem;
+    }
+    .organize{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+                
+    }
+    .organize #tema{
+        padding-top: 10rem;
+    }
+
+    .organize #tema h1{
+        font-size: 2.5rem;
+        width: 70%;
+    }
+    .organize p{
+        width: 90%;
+    }
+    .organize .img-task{
+        width: 33%;
+        height: auto;
+        margin: auto;
+        margin-top: -18rem;
+        margin-bottom: 10rem;
+        position:relative;
+        z-index: 1000;
+
+    }
+    .organize .img-task img{
+        width: 100%;
+        z-index: 1000;
+    }
+    .organize #tema{
+        width: 40%;
+        margin-left: 30rem;
+    }
+    .organize .parrafo{
+        width: 40%;
+    }  
+    .organize #persona1::before{
+        content: '';
+        background-image: url(archivos/person-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -12rem;
+        margin-top: 14rem;
+        width: 100%;
+        height: 80%;
+    }
+   .organize #persona1::after{
+        content: '';
+        background-image: url(archivos/plant-right.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: -23rem;
+        left: 90%;
+        width: 30%;
+        height: 80%;
+        z-index: -100;
+    }
+    .organize #persona2::before{
+        content: '';
+        background-image: url(archivos/plant-left.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: 30rem;
+        left: -23%;
+        width: 30%;
+        height: 80%;
+        z-index: -100;        
+    }
+    .organize #persona2::after{
+        content: '';
+        background-image: url(archivos/person-2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: -25rem;
+        left: 80%;
+        width: 80%;
+        height: 100%;
+    }
+    .organize #persona3::before{
+        content: '';
+        background-image: url(archivos/plant-left.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: 30rem;
+        left: -23%;
+        width: 30%;
+        height: 80%;
+        z-index: -100;
+   }
+    .organize #persona3::after{
+        content: '';
+        background-image: url(archivos/person-3.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: -25rem;
+        left: 80%;
+        width: 100%;
+        height: 100%;
+    }
+    .organize #persona4::before{
+        content: '';
+        background-image: url(archivos/shopping-cart.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -12rem;
+        margin-top: 37.5rem;
+        width: 100%;
+        height: 80%;
+    }
+   .organize #persona4::after{
+        content: '';
+        background-image: url(archivos/plant-right.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: -23rem;
+        left: 90%;
+        width: 30%;
+        height: 80%;
+        z-index: -100;
+    }
+    .organize #persona5::before{
+        content: '';
+        background-image: url(archivos/plant-left.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: 30rem;
+        left: -23%;
+        width: 30%;
+        height: 80%;
+        z-index: -100;
+   }
+    .organize #persona5::after{
+        content: '';
+        background-image: url(archivos/routine.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        margin-top: -50rem;
+        left: -60%;
+        width: 225%;
+        height: 100%;
+    }
+    #foot{
+        width: 90%;
+        margin-top: -4rem;
+        margin-bottom: 6rem;
+        height: 20rem;
+        max-height: 20rem;
+    }
+    #foot p{
+        width: 50%;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+    }
+    #foot #app{
+        margin-top: 2rem;
+    }
+    footer{
+        width: 100%;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    footer #footlogo{
+        display: block;
+    }
+
+}

@@ -1,0 +1,268 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.hero {
+		margin:0 30px;
+	}
+
+	.i-mrtappsk {
+		background:none;
+	} 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.i-mrtappsk {
+		background:none;
+	}
+
+	.hide, .h-buttons .play {
+			display:none;
+		}
+
+	.hero-phone-over, .plus, .hide {
+		display:none;
+	}
+
+
+
+	.logo-t {
+		text-align:center;
+	}
+
+	.h-title {
+		margin:0;
+		margin-bottom:90px;
+	}
+
+	.hero {
+		text-align:center;
+		background:none;
+	}
+
+	.hero h1 {
+		font-size:26px;
+		font-weight:700;
+		line-height:36px;
+		margin-bottom:15px;
+
+		color:#28282C;
+	}
+
+	h2 {
+		font-size:26px;
+		line-height:36px;
+		color:#28282C;
+		margin-left:65px;
+	}
+
+	.h-desc {
+		font-size:16px;
+		line-height:26px;
+		margin-top:0px;
+		padding-right:0;
+		color:#28282C;
+	}
+
+	.h-buttons .app-store {
+		float:none!important;
+		margin-right:0px;
+	}
+
+	.h-buttons .watch  {
+		margin-left:0px;
+		display:block;
+		border:0px;
+		margin-top:10px;
+		color:#44C0FF;
+	}
+
+	.h-buttons .watch:hover {
+		background:none;
+	}
+
+
+	.play-blue {
+		display:inline-block;
+		background:url('../img/play-blue.svg') 0 2px no-repeat;
+		width:13px;
+		height:15px;
+		margin-right:10px;
+	}
+
+	.features-title {
+		font-size:24px;
+		line-height:36px;
+		margin-bottom: 40px;
+		margin-top:0px;
+	}
+
+	.feature {
+		margin-bottom:40px;
+	}
+
+	.mobile-show {
+		display:inline-block;
+		width:100%;
+		overflow:hidden;
+		margin-top:-140px;
+		text-align:center;
+	}
+
+	.mobile {
+		display:inline-block;
+		padding:0 260px;
+		margin-bottom:60px;
+	}
+
+
+	.hero-footer {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2ea5f2+0,6ed2ff+100 */
+	background: #2ea5f2; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #2ea5f2 0%, #6ed2ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #2ea5f2 0%,#6ed2ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #2ea5f2 0%,#6ed2ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ea5f2', endColorstr='#6ed2ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+
+	}
+	
+	.hero-footer .h-desc {
+		padding-right:0px;
+		font-size:16px;
+		line-height:27px;
+		color:#fff;
+	}
+
+	.hero-footer .h-title {
+		margin:40px 0;
+	}
+
+	.content-tab {
+		height:auto;
+	}
+
+ 	.content {
+		padding-bottom:40px;
+	}
+
+	.features {
+		margin-bottom:40px;
+	}
+
+	.fpos {
+		position:absolute;
+		left:auto;
+		margin-top:-4px;
+	}
+
+	.bg-1 {
+		background:none;
+	}
+
+
+
+	footer a {
+		    margin-left: 0 !important;
+		    display:block;
+	}
+
+	footer * {
+		text-align:left !important;
+	}
+
+	footer .logo {
+		display:none;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+
+	.hero {
+		margin:0 10px;
+	}
+
+	
+
+	.logo-t {
+		text-align:center;
+	}
+
+	header {
+		margin-top:25px;
+		margin-bottom:25px;
+	}
+
+	.mobile {
+		padding:0 120px;
+	}
+
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.mobile {
+		padding:0 60px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
